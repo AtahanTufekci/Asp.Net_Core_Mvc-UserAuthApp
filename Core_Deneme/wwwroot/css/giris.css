@@ -1,0 +1,125 @@
+﻿body {
+    background: cornsilk;
+}
+
+
+.textbox-2 {
+    border: 10px outset crimson;
+    outline: 0;
+    padding: 8px 5px;
+    padding-right: 80px;
+}
+
+
+.input-wrap {
+    position: relative;
+    display: inline-block;
+}
+
+input#password {
+    padding: 8px 5px;
+    padding-right: 80px;
+    border: 10px outset crimson;
+    outline: 0;
+}
+
+#show-pass {
+    width: 40px;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+    cursor: pointer;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+}
+
+.fa-eye:before {
+    content: "\f06e";
+}
+
+.fa-eye-slash:before {
+    content: "\f070";
+}
+
+
+p {
+    color: white;
+    font-size: 16px;
+}
+
+.button-79 {
+    backface-visibility: hidden;
+    background: crimson;
+    border: 0;
+    border-radius: .375rem;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Circular,Helvetica,sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: -.01em;
+    line-height: 1.3;
+    padding: 1rem 1.25rem;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transform: translateZ(0) scale(1);
+    transition: transform .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 280px;
+    text-align: center;
+}
+
+.button-79:disabled {
+    color: #787878;
+    cursor: auto;
+}
+
+.button-79:not(:disabled):hover {
+    transform: scale(1.05);
+}
+
+    .button-79:not(:disabled):hover:active {
+        transform: scale(1.05) translateY(.125rem);
+    }
+
+.button-79:focus {
+    outline: 0 solid transparent;
+}
+
+    .button-79:focus:before {
+        border-width: .125rem;
+        content: "";
+        left: calc(-1*.375rem);
+        pointer-events: none;
+        position: absolute;
+        top: calc(-1*.375rem);
+        transition: border-radius;
+        user-select: none;
+    }
+
+    .button-79:focus:not(:focus-visible) {
+        outline: 0 solid transparent;
+    }
+
+.button-79:not(:disabled):active {
+    transform: translateY(.125rem);
+}
+
+h1 {
+    font-family: 'Courier New';
+    font-size: 24px;
+    font-weight: 600;
+    background-image: linear-gradient(to right, black, gray);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}

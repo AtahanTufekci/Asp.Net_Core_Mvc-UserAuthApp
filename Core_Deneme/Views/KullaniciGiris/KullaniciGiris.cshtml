@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "KullaniciGiris";
+    Layout = "_girisLayout";
+}
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h1 class="text-center">GİRİŞ YAP</h1>
+<br />
+@model Kullanicilar
+<form class="text-center" asp-controller="KullaniciGiris" asp-action="KullaniciGir" method="post">
+    <div>
+        <input class="textbox-2" type="text" placeholder="E-Posta" asp-for="E_Posta">
+    </div>
+    <br />
+    <div class="input-wrap">
+        <input type="password" id="password" class="input-text" placeholder="Şifre" asp-for="Sifre">
+        <span id="show-pass" class="fa fa-eye" title="show hide password"></span>
+    </div>
+    <br />
+    <br />
+    <div>
+        <button type="submit" class="button-79"><span>Giriş Yap</span></button>
+    </div>
+</form>
+
